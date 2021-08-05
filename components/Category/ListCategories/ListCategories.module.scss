@@ -1,0 +1,20 @@
+.propertiesCategory {
+  padding: 16px 32px 0 32px;
+  font-size: 16px;
+  font-weight: 700;
+
+  .flex {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: orange;
+    }
+  }
+  .description {
+    max-width: 500px;
+    padding-bottom: 10px;
+  }
+}

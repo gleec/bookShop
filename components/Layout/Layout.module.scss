@@ -1,0 +1,62 @@
+.flex {
+  .menu {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    width: 300px;
+    background: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+
+    &.showMenu {
+      transform: translateX(0);
+    }
+  }
+
+  .head {
+    .flexHead {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: space-between;
+
+      .hiddenButton {
+        display: none;
+      }
+    }
+
+    .buttonMenu {
+      border: none;
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
+      background: none;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .flex {
+    display: flex;
+
+    .menu {
+      position: relative;
+      top: 0;
+      flex: 1 0 300px;
+      max-width: 300px;
+      box-shadow: -6px 0px 32px rgb(0 0 0 / 30%);
+      transform: translateX(0);
+    }
+    .head {
+      width: 100%;
+      .flexHead {
+        justify-content: flex-end;
+        .hiddenButton {
+          display: block;
+        }
+      }
+
+      .buttonMenu {
+        display: none;
+      }
+    }
+  }
+}

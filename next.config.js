@@ -1,3 +1,5 @@
 module.exports = {
-  reactStrictMode: true,
-}
+  images: {
+    domains: ['planetadelibrosve3.cdnstatics.com']
+  }
+};
